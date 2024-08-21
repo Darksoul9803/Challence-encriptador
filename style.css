@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 100%;
+}
+
+body {
+    background: linear-gradient(#ffc300 0%, #003566 33.33%, #001d3d 66.67%, #000814 100%);
+    color: #E2E2B6;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 8%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.texto-de-usuario{
+    border: none;
+    color: #0a3871;
+    margin-top: 30px;
+    text-transform: lowercase;
+    border-radius: 15px;
+    width: 100%;
+    height: 75%;
+}
+
+::placeholder {color: #0A3871;}
+    .texto-de-usuario:focus {
+        outline: none;
+    }
+
+.resultado{
+    background-color: white;
+    background-image: url("assets/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    height: 85%;
+}
+
+.resultado:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 10px;
+}
+
+.boton-encriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #ffd60a;
+    cursor: pointer;
+    height: 60px;
+    width: 320px;
+}
+
+.boton-desencriptar{
+    background: #ffd60a;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 60px;
+    margin-left: 30px;
+    width: 320px;
+}
+
+.copiar{
+    background-color: #ffd60a;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 10px;
+    position: absolute;
+    width: 336px;
+}
+
+.terminos{
+    color:antiquewhite;
+    font-size: 18px;
+}
+
+.pie{
+    background-color: #ffd60a;
+    color: #0A3871;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px ){
+    .cuerpo{
+        flex-direction: column;
+        width: 80%;
+    }
+    .resultado{
+        margin-left: 0px;
+        margin-top: 10px;
+        padding-left: 0px;
+        width: 100%;
+    }
+}

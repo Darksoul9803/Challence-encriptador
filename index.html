@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador RRC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabeza">
+        <img class="logo" src="/assets/Logo.png" alt="logo de Alura">
+    </header>
+    <main class="cuerpo">
+        <section>
+            <textarea class="texto-de-usuario" cols="30" rows="10" placeholder="Ingrese el texto que desee encriptar o desencriptar"></textarea>
+            <div class="advertancia">
+                <p class="terminos">Escribir solamente minusculas sin acentos ni caracteres especiales.</p>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptar" type="button" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar" type="button" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="resultado" cols="20" rows="10"></textarea>
+            <div>
+                <button class="copiar" type="button" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="pie">
+        <H1>Desarrollado por Rafael Regalado, a través de ALURA LATAM</H1>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>
